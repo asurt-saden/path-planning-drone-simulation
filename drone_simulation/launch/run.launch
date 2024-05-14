@@ -1,0 +1,11 @@
+<launch>
+<!-- Launch the motors node -->
+<node name="motors" pkg="drone_simulation" type="motors.py" output="screen" />
+<!-- Launch the Path_to_goal node -->
+<!--node name="path_to_goal" pkg="drone_simulation" type="Path_to_goal.py" output="screen" /> -->
+<!-- Launch the A_star node -->
+<node name="apf" pkg="apf" type="my_apf.py" output="screen" /> 
+<node name="high_level" pkg="apf" type="high_level.py" output="screen" /> 
+<!-- Launch the controller node -->
+<!-- <node name="controller" pkg="drone_sim" type="controller.py" output="screen" /> -->
+</launch>
